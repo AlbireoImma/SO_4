@@ -1,4 +1,6 @@
-from atencion import Meson
+from atencion import *
+from threading import Lock
+
 
 def main():
     mesones = list()
