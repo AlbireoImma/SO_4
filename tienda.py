@@ -28,19 +28,14 @@ class Atencion(Thread):
         return self.en_cola
 
     def run(self):
-        for a in range(5):
-            global numero
-            lock.acquire()
-            self.clientes.append(numero)
-            numero = numero + 1
-            lock.release()
-        while(len(self.clientes) > 0):
-            time.sleep(2)
-            self.atendidos += 1
-            print("[Thread {}] Clientes atendidos: {}, Cliente actual: {}".format(self.nro_meson,self.atendidos,self.clientes[0]))
-            del self.clientes[0]
-            print("[Thread "+str(self.nro_meson)+"] Clientes esperando -> ",self.clientes)
-        print("[Thread %d] Trabajo cumplido" % self.nro_meson)
+        while(tienda.abierta == 1):
+            while(len(self.clientes) > 0):
+                time.sleep(2)
+                self.atendidos += 1
+                print("[Thread {}] Clientes atendidos: {}, Cliente actual: {}".format(self.nro_meson,self.atendidos,self.clientes[0]))
+                del self.clientes[0]
+                print("[Thread "+str(self.nro_meson)+"] Clientes esperando -> ",self.clientes)
+            print("[Thread %d] Trabajo cumplido" % self.nro_meson)
         return
 
 # Clase representativa de un cliente
