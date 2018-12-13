@@ -68,9 +68,10 @@ class Tienda(Thread):
             while self.espacio > 0:
                 print("[Tienda] Espacio: ",self.espacio)
                 self.clientes.append(Clientes_Esperando[0].nro_cliente)
-                min = 100
-                self.atencion[get_posmin(self.atencion)].clientes.append(Clientes_Esperando[0].nro_cliente)
+                min_pos = get_posmin(self.atencion)
+                self.atencion[min_pos].clientes.append(Clientes_Esperando[0].nro_cliente)
                 self.espacio -= 1
+                print("Cliente: ",Clientes_Esperando[0].nro_cliente," En fila en Meson: ",self.atencion[min_pos].nro_meson)
                 del Clientes_Esperando[0]
             time.sleep(2)
             print("[Tienda] Espacio: ",self.espacio)
@@ -87,7 +88,7 @@ bano = Sem(1)
 remover = Sem(1)
 Clientes_Esperando = list()
 
-for i in range(50):
+for i in range(51):
     Clientes_Esperando.append(Cliente(i))
 
 def main():
