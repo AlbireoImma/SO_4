@@ -1,0 +1,11 @@
+Proceso:
+
+1.- Obtener una fila de clientes afuera
+2.- Abrir la tienda
+3.- Ingresar 30 clientes a la tienda
+4.- Mover las clientes entre filas minimas
+4.1.- Atender clientes en los mesones de informacion
+4.2.- Atender clientes en las cajas
+4.3.- Clientes se retiran de la tienda
+5.- Ingresar clientes nuevos entre las filas minimas
+5.1.- Verificar si quedan clientes si no cerrar la tienda
