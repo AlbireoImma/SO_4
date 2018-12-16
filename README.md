@@ -2,14 +2,14 @@
 
 > Tarea donde se desarrollan threads y semaforos para cumplir el funcionamiento de una tienda
 
-[![Python Version][python-image]][python-url]
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 El repositorio cumple con las especificaciones proporcionadas en el archivo pdf explicativo sobre la tarea
 
 ## Correr el codigo
 
 Distribuciones Unix
-```
+```Unix
 $ python3 Tienda.py
 ```
 
