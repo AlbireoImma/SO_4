@@ -2,7 +2,7 @@
 
 > Tarea donde se desarrollan threads y semaforos para cumplir el funcionamiento de una tienda
 <br>
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)]
 
 El repositorio cumple con las especificaciones proporcionadas en el archivo pdf explicativo sobre la tarea
 
